@@ -1,0 +1,80 @@
+/* Grundläggande styling för hela sidan */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Appens container */
+.app {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Header - "Random Donald Trump Quotes" */
+header.quotes {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Stil för citatet */
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #040404;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Styling för knappen */
+button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+  .app {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  header.quotes {
+    font-size: 1.3rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
